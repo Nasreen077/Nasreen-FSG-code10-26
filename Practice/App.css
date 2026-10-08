@@ -1,0 +1,72 @@
+/* Resets browser spacing to make sure the app-container takes up 100% of the display */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  font-family: system-ui, -apple-system, sans-serif;
+  transition: background-color 0.4s ease; /* Adds a fluid fade transition when shifting background colors */
+}
+
+/* Heading styles */
+.heading {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  transition: color 0.3s ease;
+}
+
+/* Bold dark accent colors for text headings */
+.text-red { color: #dc2626; }
+.text-blue { color: #2563eb; }
+.text-green { color: #16a34a; }
+.text-yellow { color: #b45309; }
+
+/* Button layout row */
+.button-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Core button styles */
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.15s ease-in-out;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Button surface backgrounds */
+.btn-red { background-color: #dc2626; }
+.btn-blue { background-color: #2563eb; }
+.btn-green { background-color: #16a34a; }
+
+.btn-yellow { 
+  background-color: #facc15; 
+  color: #111827; 
+}
